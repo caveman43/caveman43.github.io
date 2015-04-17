@@ -1,0 +1,184 @@
+<div> <div> <ul class="nav nav-pills"> <li ng-model="tab" ng-repeat="tab in tabs" ng-class="{active:isActiveTab(tab.id)}"> <a class="text-muted" ng-click="selectTab(tab)"> {{tab.title}} </a> </li> </ul> </div> <form name="formdata" class="form-horizontal"> <div> <div ng-include="tab.template" class="content-container slide"></div> </div> <div class="line-section"></div> <div class="col-sm-12 form-group"> <div class="button-footer"> <input class="btn btn-default btn-custom" type="button" value="Cancel"> <span class="pull-right"> <input class="btn btn-default btn-custom" type="button" value="Save" ng-disabled="saveDisabled"> <input class="btn btn-default btn-custom" type="button" value="< Back" ng-click="prevTab(tab)" ng-disabled="backDisabled"> <input class="btn btn-default btn-custom" type="button" value="Next >" ng-click="nextTab(tab)" ng-disabled="nextDisabled"> </span> </div> </div> </form> </div> <script type="text/ng-template" id="definition-template.html"><div class="row">
+                <div class="col-md-3 col-lg-3">
+                    <!-- VM Type -->
+                </div>
+                <div class="col-md-8 col-lg-8">
+                    <ul class="list-inline">
+                        <li>
+                            <div class="imgbox">
+                                <div class="imageone"></div>
+                                <div class="text-center">Dedicated</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="imgbox">
+                                <div class="imagetwo"></div>
+                                <div class="text-center">Floating</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="imgbox">
+                                <div class="imagethree"></div>
+                                <div class="text-center">Session</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+                <div class="col-sm-12">
+                    <div class="sub-header">Fixed Attributes</div>
+                    <div class="line-section"></div>
+                    <div class="form-group">
+                        <div class="control-label col-sm-3">
+                            Data Center:
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="dropdown">
+                                <button class="btn dropdown dropdown-list" type="button" data-toggle="dropdown">
+                                    San Francisco
+                                    <span class="pull-right"><i class="glyphicon caret"></i></span>
+                                </button>
+                                <ul class="dropdown-menu dropdown-list-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                    <li ><a href="#">Santa Clara<span class="text-muted small"> (some text)</span></a></li>
+                                    <li><a href="#">San Jose</a></li>
+                                    <li><a href="#">Drop down Text</a></li>
+                                    <li><a href="#">Drop Down Text</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="control-label col-sm-3">
+                            Desktop Model:
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="dropdown">
+                                <button class="btn dropdown dropdown-list" type="button" data-toggle="dropdown">
+                                    Standard <span class="text-muted"> (2GB Memory, 1 CPU)</span>
+                                    <span class="pull-right"><i class="glyphicon caret"></i></span>
+                                </button>
+                                <ul class="dropdown-menu dropdown-list-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                    <li ><a href="#">Santa Clara<span class="text-muted small"> (some text)</span></a></li>
+                                    <li><a href="#">San Jose</a></li>
+                                    <li><a href="#">Drop down Text</a></li>
+                                    <li><a href="#">Drop Down Text</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="control-label col-sm-3">
+                            Domain:
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="dropdown">
+                                <button class="btn dropdown dropdown-list" type="button" data-toggle="dropdown">
+                                    Domain Alpha
+                                    <span class="pull-right"><i class="glyphicon caret"></i></span>
+                                </button>
+                                <ul class="dropdown-menu dropdown-list-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                    <li ><a href="#">Santa Clara<span class="text-muted small"> (some text)</span></a></li>
+                                    <li><a href="#">San Jose</a></li>
+                                    <li><a href="#">Drop down Text</a></li>
+                                    <li><a href="#">Drop Down Text</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="control-label col-sm-3">
+                            Join Domain:
+                        </div>
+                        <div class="control-label col-sm-2">
+                            <div class="onoffswitch">
+                                <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+                                <label class="onoffswitch-label" for="myonoffswitch">
+                                    <span class="onoffswitch-inner"></span>
+                                    <span class="onoffswitch-switch"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-sm-12">
+                    <div class="sub-header">Flexible Attributes</div>
+                    <div class="line-section"></div>
+
+                    <div class="form-group">
+                        <div class="control-label col-sm-3">
+                            Assignment Name:
+                        </div>
+                        <div class="col-sm-5">
+                            <input class="form-control" type="text"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="control-label col-sm-3">
+                            Capacity:
+                        </div>
+                        <div class="col-sm-2">
+                            <select class="form-control">
+                                <option value="200">200</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-2">
+                            <span class="form-inline text-muted pull-left">10 Remaining</span>
+                        </div>
+                        <div class="col-sm-3">
+                            <a class="links" href="#">Buy more Capacity</a>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="control-label col-sm-3">
+                            <a class="links" href="#">Advanced properties</a>
+                        </div>
+                    </div>
+                </div></script> <script type="text/ng-template" id="images-template.html"><div>
+        <div class="col-sm-6">
+            <div class="header-item">Images</div>
+            <div class="list-container">
+                <ul class="list-group">
+                    <li class="list-group-item" ng-repeat="item in imageList" ng-click="chooseImage(item)">
+                        {{item.name}}
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="header-item">{{selectedImage.name}}</div>
+            <div class="list-value-container"  ng-if="selectedImage.name">
+                <div class="list-group-padded">
+                    <div class="col-sm-6">Name:</div><div class="col-sm-6">{{imageDetail.name}}</div>
+                </div>
+                <div class="list-group-padded">
+                    <div class="col-sm-6">Version:</div><div class="col-sm-6">{{imageDetail.version}}</div>
+                </div>
+                <div class="list-group-padded">
+                    <div class="col-sm-6">OS:</div><div class="col-sm-6">{{imageDetail.os}}</div>
+                </div>
+                <div class="list-group-padded">
+                    <div class="col-sm-6">Data Center:</div><div class="col-sm-6">{{imageDetail.dc}}</div>
+                </div>
+                <div class="list-group-padded">
+                    <div class="col-sm-6">H/W Version:</div><div class="col-sm-6">{{imageDetail.hwv}}</div>
+                </div>
+                <div class="list-group-padded">
+                    <div class="col-sm-6">Modified:</div><div class="col-sm-6">{{imageDetail.modified}}</div>
+                </div>
+                <div class="list-group-padded">
+                    <div class="col-sm-6">Last Backup:</div><div class="col-sm-6">{{imageDetail.lastbkp}}</div>
+                </div>
+                <div class="list-group-padded">
+                    <div class="col-sm-6">Description:</div><div class="col-sm-6">{{imageDetail.desc}}</div>
+                </div>
+            </div>
+        </div>
+    </div></script> <script type="text/ng-template" id="users-template.html">Users</script> <script type="text/ng-template" id="summary-template.html">Summary</script>
