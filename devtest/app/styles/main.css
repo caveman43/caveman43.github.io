@@ -1,0 +1,344 @@
+/* Space out content a bit */
+body {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  font-family: arial, sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+}
+
+.content-wrapper {
+    overflow: hidden;
+}
+
+/* page header */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.sub-header {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+/* footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* Customize container */
+.container {
+    max-width: 900px;
+    background: rgba(128, 128, 128, 0.09);
+  }
+
+.container-narrow  hr {
+  margin: 30px 0;
+}
+
+.content-container {
+    overflow: hidden;
+    height: 580px;
+}
+
+.control-label.col-sm-3 {
+    text-align: left;
+    margin-left: 10px;
+}
+
+.imgbox {
+    margin-top: 28px;
+    margin-right: 60px;
+    margin-bottom: 10px;
+}
+
+.line-section{
+    height:1px;
+    padding-top: 20px;
+    border-top:3px solid  rgba(188, 185, 185, 0.25);
+    color: rgba(188, 185, 185, 0.25);
+}
+
+/* navigation bar */
+
+.nav-pills li a, .nav-pills li a:link {
+    width:216px;
+    border-radius:0px;
+    border-bottom-width: 4px;
+    border-bottom-style: solid;
+    border-bottom-color: #a3a3a3;
+    font-size: 11px;
+    font-weight: normal;
+}
+
+.nav-pills li a + .nav-pills li a:visited {
+    border-bottom-color: #0e7ab4;
+    color: #0e7ab4 !important;
+}
+
+.nav-pills .active a,
+.nav-pills .active a:hover,.nav-pills li a:hover {
+    cursor: pointer;
+    font-size: 11px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius:0px;
+    border-bottom-width: 4px;
+    border-bottom-style: solid;
+    border-bottom-color: #6CB43E;
+    color: #6CB43E !important;
+    background-color: transparent !important;
+}
+
+/* Links */
+.links {
+    font-weight: normal;
+}
+
+.links:hover {
+    font-weight: normal;
+}
+
+.links:active {
+    color: deepskyblue;
+}
+
+/*This image section could be done better using only angular */
+.imageone {
+    background-image:url('../images/Desktop_Dedicated_Off_65p.png');
+    width: 65px;
+    height: 65px;
+}
+
+.imagetwo {
+    background-image:url('../images/Desktop_Floating_Off_65p.png');
+    width: 65px;
+    height: 65px;
+}
+
+.imagethree {
+    background-image:url('../images/Desktop_Session_Off_65p.png');
+    width: 65px;
+    height: 65px;
+}
+
+.imageone:hover {
+    cursor: pointer;
+    background-image:url("../images/Desktop_Dedicated_On_65p.png");
+}
+
+.imagetwo:hover {
+    cursor: pointer;
+    background-image:url("../images/Desktop_Floating_On_65p.png");
+}
+
+.imagethree:hover {
+    cursor: pointer;
+    background-image:url("../images/Desktop_Session_On_65p.png");
+}
+
+/*-------------*/
+
+.button-footer {
+    padding-top: 5px;
+    color: #a3a3a3;
+}
+.row .rowbox {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* slide transition */
+
+.slide.ng-enter {
+    transition:0.5s ease-in-out all;
+    transform:translateX(900px);
+}
+.slide.ng-enter.ng-enter-active {
+    transform:translateX(0);
+}
+
+/*.slide.ng-enter {*/
+    /*overflow: hidden;*/
+    /*transition:0.5s ease-in-out all;*/
+    /*transform:translateX(-900px);*/
+/*}*/
+/*.slide.ng-enter.ng-enter-active {*/
+    /*overflow: hidden;*/
+    /*transform:translateX(0px);*/
+/*}*/
+
+/* */
+.header-item {
+    padding-bottom: 5px;
+    padding-top: 30px;
+}
+
+.list-container {
+    height: 500px;
+    border: solid;
+    border-color: rgba(188, 185, 185, 0.25);
+    border-width: 3px;
+}
+
+.list-value-container {
+    border-top:solid;
+    border-color: rgba(188, 185, 185, 0.25);
+}
+.list-group-padded {
+    margin-left: 0px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+
+.list-group-item:hover {
+    background-color: #DCF5BD;
+}
+
+/* button css */
+.btn.btn-default.btn-custom {
+    background-color: rgba(169, 169, 169, 0.21);
+    border: 0px;
+    width: 100px;
+
+}
+
+.btn.btn-default.btn-custom:hover {
+    color:white;
+    background-color: #6CB43E;
+}
+
+.btn.btn-default.btn-custom:active {
+    color:white;
+    background-color: #06b410;
+}
+
+.btn.btn-default.btn-custom:disabled {
+    color: gray;
+    background-color: white;
+    border: solid;
+    border-width: 1px;
+    border-color: gray;
+}
+
+.closetop {
+    width: 14px;
+    height: 14px;
+    background-image:url("../images/Close_Available_14p.png");
+}
+
+.closetop:hover {
+    cursor: pointer;
+    background-image:url("../images/Close_HoverClick_14p.png");
+}
+
+/* custom css for dropdowns*/
+.btn.dropdown.dropdown-list {
+    width: 350px;
+    margin-left: 0px;
+    background: white;
+    border: solid;
+    border-color: rgba(188, 185, 185, 0.51);
+    border-width: 2px;
+    text-align: left;
+}
+
+.btn.dropdown.dropdown-list:hover, .dropdown.dropdown-list:focus {
+    color: white;
+    text-decoration: none;
+    background: #6CB43E;
+}
+
+.dropdown-menu.dropdown-list-menu {
+    width:350px;
+}
+
+.dropdown-menu.dropdown-list-menu li a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: normal;
+    line-height: 1.42857143;
+    color: #333;
+    white-space: nowrap;
+}
+
+.dropdown-menu.dropdown-list-menu li a:hover {
+    background: #DCF5BD;
+}
+
+/* on - off switch (Took it from web and changed) */
+
+.onoffswitch {
+    position: relative;
+    width: 90px;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    border: 2px solid #BDB3B3;
+    border-radius: 18px;
+}
+.onoffswitch-inner {
+    display: block;
+    width: 200%;
+    margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block;
+    float: left;
+    width: 50%;
+    height: 30px;
+    padding: 0;
+    line-height: 30px;
+    font-size: 14px;
+    color: white;
+    font-family: Trebuchet, Arial, sans-serif;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "YES";
+    padding-right: 40px;
+    background-color: #6CB43E;
+    color: #FFFFFF;
+}
+.onoffswitch-inner:after {
+    content: "NO";
+    padding-right: 10px;
+    background-color: #D1D1D1;
+    color: #FFFFFF;
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: block;
+    width: 20px;
+    margin: 7.5px;
+    background: #FFFFFF;
+    border: 2px thin #BDB3B3;
+    border-radius: 20px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 56px;
+    transition: all 0.3s ease-in 0s;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px;
+    background: #DCF5BD;
+}
